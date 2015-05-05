@@ -14,7 +14,6 @@ public class Admin {
             mulai.lingkungan();
             mulai.kenyamanan();
             mulai.keamanan();
-            mulai.analisis_bentuk();
             mulai.tampil();
             System.out.println("edit data (ya / tidak) : ");
             ul = in.next();

@@ -1,9 +1,8 @@
 package tb;
 import java.util.Scanner;
-public class Inventaris {
+public class Inventaris extends Input {
     Scanner ruang = new Scanner(System.in);
     Input in = new Input();
-    boolean a, b, c, d, e, f, g, h, i, j, k, l, m, n;
     public void input(){
         System.out.println("masukkan ruang : ");
         in.setRuang(ruang.next());
@@ -107,147 +106,7 @@ public class Inventaris {
         System.out.println("keamanan : ");
         in.setKeamanan(ruang.next());
     }
-    public boolean analisis_bentuk(){
-        if(in.getP_ruang() != in.getL_ruang()){
-            System.out.println("bentuk : persegi panjang");
-            System.out.println("sesuai");
-            a = true;
-        }
-        else{
-            System.out.println("tidak sesuai");
-        }
-        return a;
-    }
-    public boolean analisis_rasio(){
-        if(hitung_rasio() >= 0.5){
-            System.out.println("sesuai");
-            b = true;
-        }
-        else{
-            System.out.println("tidak sesuai");
-        }
-        return b;
-    }
-    public boolean analisis_pintu(){
-        if(in.getJ_pintu() >= 2){
-            System.out.println("sesuai");
-            c = true;
-        }
-        else{
-            System.out.println("tidak sesuai");
-        }
-        return c;
-    }
-    public boolean analisis_jendela(){
-        if(in.getJ_jendela() >= 1){
-            System.out.println("sesuai");
-            d = true;
-        }
-        else{
-            System.out.println("tidak sesuai");
-        }
-        return d;
-    }
-    public boolean analisis_steker(){
-        if(in.getJ_steker() >= 4){
-            System.out.println("sesuai");
-            e = true;
-        }
-        else{
-            System.out.println("tidak sesuai");
-        }
-        return e;
-    }
-    public boolean analisis_kabel_lcd(){
-        if(in.getJ_kabel_lcd() >= 1){
-            System.out.println("sesuai");
-            f = true;
-        }
-        else{
-            System.out.println("tidak sesuai");
-        }
-        return f;
-    }
-    public boolean analisis_lampu(){
-        if(in.getJ_lampu() >= 18){
-            System.out.println("sesuai");
-            g = true;
-        }
-        else{
-            System.out.println("tidak sesuai");
-        }
-        return g;
-    }
-    public boolean analisis_kipas(){
-        if(in.getJ_kipas() >= 2){
-            System.out.println("sesuai");
-            h = true;
-        }
-        else{
-            System.out.println("tidak sesuai");
-        }
-        return h;
-    }
-    public boolean analisis_ac(){
-        if(in.getJ_ac() >= 1){
-            System.out.println("sesuai");
-            i = true;
-        }
-        else{
-            System.out.println("tidak sesuai");
-        }
-        return i;
-    }
-    /*public boolean analisis_internet(){
-        if(in.getSsid() == in.getSsid().equalsIgnoreCase("umm")){
-            System.out.println("sesuai");
-            j = true;
-        }
-        else{
-            System.out.println("tidak sesuai");
-        }
-        return j;
-    }*/
-    public boolean analisis_cctv(){
-        if(in.getJ_cctv() == 2){
-            System.out.println("sesuai");
-            k = true;
-        }
-        else{
-            System.out.println("tidak sesuai");
-        }
-        return k;
-    }
-    public boolean analisis_cahaya(){
-        if(250 >= in.getPencahayaan() || in.getPencahayaan() <=350){
-            System.out.println("sesuai");
-            l = true;
-        }
-        else{
-            System.out.println("tidak sesuai");
-        }
-        return l;
-    }
-    public boolean analisis_kelembapan(){
-        if(70 >= in.getKelembapan() || in.getKelembapan() <= 80){
-            System.out.println("sesuai");
-            m = true;
-        }
-        else{
-            System.out.println("tidak sesuai");
-        }
-        return m;
-    }
-    public boolean analisis_suhu(){
-        if(25 >= in.getSuhu() || in.getSuhu() <= 35){
-            System.out.println("sesuai");
-            n = true;
-        }
-        else{
-            System.out.println("tidak sesuai");
-        }
-        return n;
-    }
+    
     public double hitung(){
         return in.getP_ruang() * in.getL_ruang();
     }
