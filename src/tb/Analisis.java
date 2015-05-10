@@ -1,7 +1,14 @@
 package tb;
 public class Analisis {
     boolean a, b, c, d, e, f, g, h, i, j, k, l, m, n;
-    Inventaris in = new Inventaris();
+    Enkapsulasi in = new Enkapsulasi();
+    
+    public double hitung(){
+        return in.getP_ruang() * in.getL_ruang();
+    }
+    public double hitung_rasio(){
+        return hitung() / in.getJ_kursi();
+    }
     public boolean analisis_bentuk(){
         if(in.getP_ruang() != in.getL_ruang()){
             System.out.println("bentuk : persegi panjang");
@@ -15,7 +22,7 @@ public class Analisis {
         return a;
     }
     public boolean analisis_rasio(){
-        if(in.hitung_rasio() >= 0.5){
+        if(hitung_rasio() >= 0.5){
             System.out.println("sesuai");
             b = true;
         }
@@ -102,7 +109,7 @@ public class Analisis {
         }
         return i;
     }
-    public boolean analisis_internet(){
+    /*public boolean analisis_internet(){
         if(in.getSsid() == in.getSsid().equalsIgnoreCase("umm")){
             System.out.println("sesuai");
             j = true;
@@ -111,7 +118,7 @@ public class Analisis {
             System.out.println("tidak sesuai");
         }
         return j;
-    }
+    }*/
     public boolean analisis_cctv(){
         if(in.getJ_cctv() == 2){
             System.out.println("sesuai");

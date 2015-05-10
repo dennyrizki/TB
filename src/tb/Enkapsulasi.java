@@ -1,5 +1,5 @@
 package tb;
-public class Input {
+public class Enkapsulasi {
     private String ruang;
     private String lokasi_ruang;
     private String prodi;

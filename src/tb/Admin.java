@@ -4,17 +4,17 @@ public class Admin {
     public static void main(String[] args) {
         String ul;
         int brp;
-        Inventaris[] ulang; 
-        ulang = new Inventaris[1];
+        Ruangan[] ulang; 
+        ulang = new Ruangan[1];
         Scanner in = new Scanner(System.in);
-        Inventaris mulai = new Inventaris();
+        Ruangan mulai = new Ruangan();
         for(int i=0; i<ulang.length;){
-            mulai.input();
+            mulai.data_ruang();
             mulai.kebersihan();
             mulai.lingkungan();
             mulai.kenyamanan();
             mulai.keamanan();
-            mulai.tampil();
+            //mulai.tampil();
             System.out.println("edit data (ya / tidak) : ");
             ul = in.next();
             if(ul.equalsIgnoreCase("ya")){
