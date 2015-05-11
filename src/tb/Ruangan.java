@@ -3,6 +3,24 @@ import java.util.Scanner;
 public class Ruangan extends Fakultas {
     Scanner r = new Scanner(System.in);
     Enkapsulasi on = new Enkapsulasi();
+    
+    @Override
+    public void nama_ruang(){
+        System.out.println("masukkan ruang : ");
+        in.setRuang(ruang.next());
+        System.out.println("masukkan lokasi ruang : ");
+        in.setLokasi_ruang(ruang.next());
+        System.out.println("masukkan fakultas / program studi : ");
+        in.setProdi(ruang.next());
+    }
+    
+    @Override
+    public void ukuran_ruang(){
+        System.out.println("masukkan panjang : ");
+        in.setP_ruang(ruang.nextInt());
+        System.out.println("masukkan lebar : ");
+        in.setL_ruang(ruang.nextInt());
+    }
 
     public void kebersihan(){
         System.out.println("kondisi lantai : ");

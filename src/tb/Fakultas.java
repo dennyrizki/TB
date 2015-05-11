@@ -3,17 +3,13 @@ import java.util.Scanner;
 public class Fakultas {
     Enkapsulasi in = new Enkapsulasi();
     Scanner ruang = new Scanner(System.in);
+    public void nama_ruang(){
+        in.setData("610", "GKB 3", "Informatika");
+    }
+    public void ukuran_ruang(){
+        in.setData(6, 4);
+    }
     public void data_ruang(){
-        System.out.println("masukkan ruang : ");
-        in.setRuang(ruang.next());
-        System.out.println("masukkan lokasi ruang : ");
-        in.setLokasi_ruang(ruang.next());
-        System.out.println("masukkan fakultas / program studi : ");
-        in.setProdi(ruang.next());
-        System.out.println("masukkan panjang : ");
-        in.setP_ruang(ruang.nextInt());
-        System.out.println("masukkan lebar : ");
-        in.setL_ruang(ruang.nextInt());
         System.out.println("masukkan jumlah kursi : ");
         in.setJ_kursi(ruang.nextInt());
         System.out.println("masukkan jumlah pintu : ");

@@ -14,7 +14,6 @@ public class Admin {
             mulai.lingkungan();
             mulai.kenyamanan();
             mulai.keamanan();
-            //mulai.tampil();
             System.out.println("edit data (ya / tidak) : ");
             ul = in.next();
             if(ul.equalsIgnoreCase("ya")){
@@ -25,5 +24,5 @@ public class Admin {
                 System.out.println("SELESAI");
             }
         } 
-    }
+    } 
 }
