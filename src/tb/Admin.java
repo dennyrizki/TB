@@ -1,4 +1,4 @@
-package tb;
+package tb; 
 import java.util.Scanner;
 public class Admin {
     public static void main(String[] args) {
