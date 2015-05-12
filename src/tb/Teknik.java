@@ -1,6 +1,6 @@
 package tb;
 import java.util.Scanner;
-public class Ruangan extends Fakultas {
+public class Teknik extends Fakultas {
     Scanner r = new Scanner(System.in);
     Enkapsulasi on = new Enkapsulasi();
     

@@ -1,14 +1,10 @@
 package tb;
 import java.util.Scanner;
-public class Fakultas {
+abstract public class Fakultas {
     Enkapsulasi in = new Enkapsulasi();
     Scanner ruang = new Scanner(System.in);
-    public void nama_ruang(){
-        in.setData("610", "GKB 3", "Informatika");
-    }
-    public void ukuran_ruang(){
-        in.setData(6, 4);
-    }
+    public abstract void nama_ruang();
+    public abstract void ukuran_ruang(); 
     public void data_ruang(){
         System.out.println("masukkan jumlah kursi : ");
         in.setJ_kursi(ruang.nextInt());

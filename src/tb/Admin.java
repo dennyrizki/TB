@@ -4,10 +4,10 @@ public class Admin {
     public static void main(String[] args) {
         String ul;
         int brp;
-        Ruangan[] ulang; 
-        ulang = new Ruangan[1];
+        Teknik[] ulang; 
+        ulang = new Teknik[1];
         Scanner in = new Scanner(System.in);
-        Ruangan mulai = new Ruangan();
+        Teknik mulai = new Teknik();
         for(int i=0; i<ulang.length;){
             mulai.data_ruang();
             mulai.kebersihan();
