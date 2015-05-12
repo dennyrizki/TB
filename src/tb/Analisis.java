@@ -1,4 +1,4 @@
-package tb;
+package tb; 
 public class Analisis {
     boolean a, b, c, d, e, f, g, h, i, j, k, l, m, n;
     Enkapsulasi in = new Enkapsulasi();
@@ -12,7 +12,7 @@ public class Analisis {
     public boolean analisis_bentuk(){
         if(in.getP_ruang() != in.getL_ruang()){
             a = true;
-        }
+        } 
         else{
             a = false;
         }
@@ -136,4 +136,4 @@ public class Analisis {
         }
         return n;
     }
-}
+} 
