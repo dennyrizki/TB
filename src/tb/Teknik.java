@@ -1,7 +1,7 @@
 package tb;
 import javax.swing.JOptionPane;
 import java.util.Scanner;
-public class Teknik extends Fakultas {
+public class Teknik extends Fakultas implements Universitas {
     Scanner r = new Scanner(System.in);
     Enkapsulasi on = new Enkapsulasi();
     
@@ -18,6 +18,7 @@ public class Teknik extends Fakultas {
         in.setL_ruang(Integer.parseInt(JOptionPane.showInputDialog("masukkan lebar")));
     }
 
+    @Override
     public void kebersihan(){
         on.setKon_lantai((JOptionPane.showInputDialog("kondisi lantai")));
         on.setKon_dinding((JOptionPane.showInputDialog("kondisi dinding")));
@@ -25,6 +26,7 @@ public class Teknik extends Fakultas {
         on.setKon_pintu((JOptionPane.showInputDialog("kondisi pintu")));
         on.setKon_jendela((JOptionPane.showInputDialog("kondisi jendela")));
     }
+    @Override
     public void lingkungan(){
         System.out.println("sirkulasi udara : ");
         on.setSir_udara((JOptionPane.showInputDialog("sirkulasi udara")));
@@ -35,6 +37,7 @@ public class Teknik extends Fakultas {
         System.out.println("suhu : ");
         on.setSuhu(r.nextDouble());
     }
+    @Override
     public void kenyamanan(){
         on.setKebisingan((JOptionPane.showInputDialog("kebisingan")));
         on.setBau((JOptionPane.showInputDialog("bau")));
@@ -42,6 +45,7 @@ public class Teknik extends Fakultas {
         on.setKerusakan((JOptionPane.showInputDialog("kerusakan")));
         on.setKeausan((JOptionPane.showInputDialog("keausan")));
     }
+    @Override
     public void keamanan(){
         on.setKekokohan((JOptionPane.showInputDialog("kekokohan")));
         on.setKunci_pintu((JOptionPane.showInputDialog("kunci pintu")));
