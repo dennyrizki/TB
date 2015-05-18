@@ -6,7 +6,7 @@ public class Analisis {
     public double hitung(){
         return in.getP_ruang() * in.getL_ruang();
     }
-    public double hitung_rasio(){
+    public double hitung_rasio(){ 
         return hitung() / in.getJ_kursi();
     }
     public boolean analisis_bentuk(){
