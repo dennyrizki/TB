@@ -1,4 +1,5 @@
 package tb;
+import javax.swing.JOptionPane;
 import java.util.Scanner;
 public class Teknik extends Fakultas {
     Scanner r = new Scanner(System.in);
@@ -6,64 +7,45 @@ public class Teknik extends Fakultas {
     
     @Override
     public void nama_ruang(){
-        System.out.println("masukkan ruang : ");
-        in.setRuang(ruang.next());
-        System.out.println("masukkan lokasi ruang : ");
-        in.setLokasi_ruang(ruang.next());
-        System.out.println("masukkan fakultas / program studi : ");
-        in.setProdi(ruang.next());
+        in.setRuang(JOptionPane.showInputDialog("masukkan ruang"));
+        in.setLokasi_ruang(JOptionPane.showInputDialog("masukkan lokasi ruang"));
+        in.setProdi(JOptionPane.showInputDialog("masukkan fakultas / program studi"));
     }
     
     @Override
     public void ukuran_ruang(){
-        System.out.println("masukkan panjang : ");
-        in.setP_ruang(ruang.nextInt());
-        System.out.println("masukkan lebar : ");
-        in.setL_ruang(ruang.nextInt());
+        in.setP_ruang(Integer.parseInt(JOptionPane.showInputDialog("masukkan panjang")));
+        in.setL_ruang(Integer.parseInt(JOptionPane.showInputDialog("masukkan lebar")));
     }
 
     public void kebersihan(){
-        System.out.println("kondisi lantai : ");
-        on.setKon_lantai(r.next());
-        System.out.println("kondisi dinding : ");
-        on.setKon_dinding(r.next());
-        System.out.println("kondisi atap : ");
-        on.setKon_atap(r.next());
-        System.out.println("kondisi pintu : ");
-        on.setKon_pintu(r.next());
-        System.out.println("kondisi jendela : ");
-        on.setKon_jendela(r.next());
+        on.setKon_lantai((JOptionPane.showInputDialog("kondisi lantai")));
+        on.setKon_dinding((JOptionPane.showInputDialog("kondisi dinding")));
+        on.setKon_atap((JOptionPane.showInputDialog("kondisi atap")));
+        on.setKon_pintu((JOptionPane.showInputDialog("kondisi pintu")));
+        on.setKon_jendela((JOptionPane.showInputDialog("kondisi jendela")));
     }
     public void lingkungan(){
         System.out.println("sirkulasi udara : ");
-        on.setSir_udara(r.next());
+        on.setSir_udara((JOptionPane.showInputDialog("sirkulasi udara")));
         System.out.println("pencahayaan : ");
-        on.setPencahayaan(r.nextInt());
+        on.setPencahayaan(Integer.parseInt((JOptionPane.showInputDialog("pencahayaan"))));
         System.out.println("kelembapan : ");
         on.setKelembapan(r.nextDouble());
         System.out.println("suhu : ");
         on.setSuhu(r.nextDouble());
     }
     public void kenyamanan(){
-        System.out.println("kebisingan : ");
-        on.setKebisingan(r.next());
-        System.out.println("bau : ");
-        on.setBau(r.next());
-        System.out.println("kebocoran : ");
-        on.setKebocoran(r.next());
-        System.out.println("kerusakan : ");
-        on.setKerusakan(r.next());
-        System.out.println("keausan : ");
-        on.setKeausan(r.next());
+        on.setKebisingan((JOptionPane.showInputDialog("kebisingan")));
+        on.setBau((JOptionPane.showInputDialog("bau")));
+        on.setKebocoran((JOptionPane.showInputDialog("kebocoran")));
+        on.setKerusakan((JOptionPane.showInputDialog("kerusakan")));
+        on.setKeausan((JOptionPane.showInputDialog("keausan")));
     }
     public void keamanan(){
-        System.out.println("kekokohan : ");
-        on.setKekokohan(r.next());
-        System.out.println("kunci pintu : ");
-        on.setKunci_pintu(r.next());
-        System.out.println("kunci jendela : ");
-        on.setKunci_jendela(r.next());
-        System.out.println("keamanan : ");
-        on.setKeamanan(r.next());
+        on.setKekokohan((JOptionPane.showInputDialog("kekokohan")));
+        on.setKunci_pintu((JOptionPane.showInputDialog("kunci pintu")));
+        on.setKunci_jendela((JOptionPane.showInputDialog("kunci jendela")));
+        on.setKeamanan((JOptionPane.showInputDialog("keamanan")));
     }
 }
