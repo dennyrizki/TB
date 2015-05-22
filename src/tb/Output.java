@@ -28,7 +28,7 @@ public class Output {
         }
         else{
             System.out.println("analsisi jendela : tidak sesuai");
-        }
+        } 
         if(in.e == true){
             System.out.println("analisis steker : sesuai");
         }
