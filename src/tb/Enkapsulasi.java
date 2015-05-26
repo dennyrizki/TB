@@ -9,7 +9,7 @@ public class Enkapsulasi implements Serializable {
     private int j_kursi;
     private int j_pintu;
     private int j_jendela;
-    private int j_steker;
+    private int j_steker; 
     private String kon_steker;
     private String pos_steker;
     private int j_kabel_lcd;

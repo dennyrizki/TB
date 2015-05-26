@@ -1,7 +1,7 @@
 package tb;
 public class Output {
     Analisis in = new Analisis();
-    public void tampil(){ 
+    public void tampil(){  
         System.out.println("hasil luas : "+in.hitung());
         System.out.println("hasil rasio : "+in.hitung_rasio());
         if(in.a == true){
@@ -28,7 +28,7 @@ public class Output {
         }
         else{
             System.out.println("analsisi jendela : tidak sesuai");
-        }
+        } 
         if(in.e == true){
             System.out.println("analisis steker : sesuai");
         }

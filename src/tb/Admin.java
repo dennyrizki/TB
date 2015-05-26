@@ -1,7 +1,7 @@
 package tb; 
 import java.util.Scanner;
 public class Admin {
-    public static void main(String[] args) {
+    public static void main(String[] args) { 
         String ul;
         int brp;
         Teknik[] ulang; 
@@ -26,3 +26,4 @@ public class Admin {
         } 
     } 
 }
+ 
