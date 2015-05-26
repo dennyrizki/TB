@@ -1,5 +1,6 @@
 package tb;
-public class Enkapsulasi {
+import java.io.Serializable;
+public class Enkapsulasi implements Serializable {
     private String ruang;
     private String lokasi_ruang;
     private String prodi;
